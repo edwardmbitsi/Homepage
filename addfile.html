@@ -6,23 +6,32 @@
     <title>Add Post</title>
 </head>
 <body>
-    <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Post</title>
-</head>
-<body>
     <link rel="stylesheet" type="text/css" href="menu.css">
 <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+<style>
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
 
-  
- 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
-
+</style>
 </head>
 <header class="header">
   <div class="logo">
@@ -226,7 +235,15 @@
         
   
 
-</body>
-</html>
+
+        <div class="row">
+            <div class="column">
+             
+            </div>
+            <div class="column">
+              
+            </div>
+          </div>
+
 </body>
 </html>
